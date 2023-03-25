@@ -1,0 +1,21 @@
+app: bouml
+binpatch: true
+
+ingredients:
+#  dist: bionic
+  dist: buster
+#  dist: xenial
+  packages:
+    - bouml
+  sources:
+#bionic
+#    - deb http://archive.ubuntu.com/ubuntu/ bionic main universe
+#    - deb http://bouml.free.fr/apt/bionic bionic free
+# buster
+    - deb http://deb.debian.org/debian buster main
+    - deb http://deb.debian.org/debian-security buster/updates main
+    - deb http://deb.debian.org/debian buster-updates main
+    - deb http://bouml.free.fr/apt/buster buster free
+# xenial
+#    - deb http://archive.ubuntu.com/ubuntu/ xenial main universe
+#    - deb http://bouml.free.fr/apt/xenial xenial free
